@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*================== REUSABLE CLASSES ============================*/
+.link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  background: red;
+  padding: 10px 20px;
+}
+.link:hover {
+  color: red;
+  background: white;
+  border: 1px solid red;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.line {
+  height: 3px;
+  width: 100px;
+  background-color: #bbb;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+/*================== HERO SECTION ============================*/
+.parallax {
+  background-image: url(img/hero.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+
+  .header {
+    width: 100%;
+    .logo {
+      padding: 10px 0px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .hero-text {
+    background: rgba(236, 234, 233, 0.6);
+    padding: 20px 16px;
+    max-width: 600px;
+    margin: 180px 30px;
+    h1 {
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+/*================== MISSION SECTION ============================*/
+.mission-container {
+  padding: 0px 20px;
+  .flex-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 400px;
+      margin-bottom: 40px;
+    }
+
+    .values-list {
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+  }
+
+  img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*================== DREAMING SECTION ============================*/
+.dreaming-container {
+  margin-top: 40px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    padding: 60px 3px;
+  }
+  .grid {
+    text-align: center;
+    padding-bottom: 10px;
+    .grid-item {
+      h3 {
+        margin-bottom: 0px;
+      }
+      p {
+        max-width: 250px;
+        font-size: 10px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+  img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*================== PARALLAX2 SECTION ============================*/
+.parallax2 {
+  background-image: url(img/night.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .text-center {
+    p {
+      color: white;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+/*================== AGENTS SECTION ============================*/
+.agents-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+  h2 {
+    padding: 0px 10px;
+  }
+  .agent1,
+  .agent2,
+  .agent3 {
+    background: #f5f5f5;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+    }
+    .name {
+      text-align: center;
+      text-transform: capitalize;
+    }
+    hr {
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+/*================== TESTIMONIALS SECTION ============================*/
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 60px;
+  font-size: 14px;
+  .flex {
+    p {
+      max-width: 800px;
+    }
+    h4 {
+      text-transform: capitalize;
+      margin-top: 8px;
+    }
+    .buyers {
+      margin-bottom: 30px;
+      max-width: 340px;
+    }
+  }
+}
+
+/*================== FOOTER SECTION ============================*/
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    padding: 20px 0px;
+  }
+}
+
+/*================== MEDIA QUERIES SECTION ============================*/
+
+@media (max-width: 800px) {
+  .parallax2 {
+    padding: 0px 20px;
+  }
+  .testimonials {
+    .flex {
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .dreaming-container {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .grid-item {
+        padding: 0px 20px;
+      }
+    }
+  }
+  .agents-container {
+    .agents-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .agent1,
+    .agent2,
+    .agent3 {
+      margin: 0px 22px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .parallax {
+    .flex-end {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+}
+
+@media (min-width: 1070px) {
+  .mission-container {
+    .mission-flex {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+}

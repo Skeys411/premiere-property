@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*================== REUSABLE CLASSES ============================*/
+.link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  background: red;
+  padding: 10px 20px;
+}
+
+.link:hover {
+  color: red;
+  background: white;
+  border: 1px solid red;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.line {
+  height: 3px;
+  width: 100px;
+  background-color: #bbb;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+
+/*================== HERO SECTION ============================*/
+.parallax {
+  background-image: url(img/hero.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+.parallax .header {
+  width: 100%;
+}
+
+.parallax .header .logo {
+  padding: 10px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax .hero-text {
+  background: rgba(236, 234, 233, 0.6);
+  padding: 20px 16px;
+  max-width: 600px;
+  margin: 180px 30px;
+}
+
+.parallax .hero-text h1 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.parallax .hero-text p {
+  margin-bottom: 20px;
+}
+
+/*================== MISSION SECTION ============================*/
+.mission-container {
+  padding: 0px 20px;
+}
+
+.mission-container .flex-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission-container .flex-left p {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.mission-container .flex-left p {
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.mission-container .flex-left .values-list {
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.mission-container img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*================== DREAMING SECTION ============================*/
+.dreaming-container {
+  margin-top: 40px;
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dreaming-container h2 {
+  padding: 60px 3px;
+}
+
+.dreaming-container .grid {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.dreaming-container .grid .grid-item h3 {
+  margin-bottom: 0px;
+}
+
+.dreaming-container .grid .grid-item p {
+  max-width: 250px;
+  font-size: 10px;
+  padding-bottom: 60px;
+}
+
+.dreaming-container img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+/*================== PARALLAX2 SECTION ============================*/
+.parallax2 {
+  background-image: url(img/night.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parallax2 .text-center p {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+/*================== AGENTS SECTION ============================*/
+.agents-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 120px;
+}
+
+.agents-container h2 {
+  padding: 0px 10px;
+}
+
+.agents-container .agent1,
+.agents-container .agent2,
+.agents-container .agent3 {
+  background: #f5f5f5;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.agents-container .agent1 img,
+.agents-container .agent2 img,
+.agents-container .agent3 img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.agents-container .agent1 .name,
+.agents-container .agent2 .name,
+.agents-container .agent3 .name {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.agents-container .agent1 hr,
+.agents-container .agent2 hr,
+.agents-container .agent3 hr {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.agents-container .agent1 p,
+.agents-container .agent2 p,
+.agents-container .agent3 p {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+/*================== TESTIMONIALS SECTION ============================*/
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  font-size: 14px;
+}
+
+.testimonials .flex p {
+  max-width: 800px;
+}
+
+.testimonials .flex h4 {
+  text-transform: capitalize;
+  margin-top: 8px;
+}
+
+.testimonials .flex .buyers {
+  margin-bottom: 30px;
+  max-width: 340px;
+}
+
+/*================== FOOTER SECTION ============================*/
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer p {
+  padding: 20px 0px;
+}
+
+/*================== MEDIA QUERIES SECTION ============================*/
+@media (max-width: 800px) {
+  .parallax2 {
+    padding: 0px 20px;
+  }
+  .testimonials .flex {
+    padding: 0px 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .dreaming-container .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .dreaming-container .grid .grid-item {
+    padding: 0px 20px;
+  }
+  .agents-container .agents-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .agents-container .agent1,
+  .agents-container .agent2,
+  .agents-container .agent3 {
+    margin: 0px 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .parallax .flex-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 1070px) {
+  .mission-container .mission-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mission-container .mission-flex img {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
